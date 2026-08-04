@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios - Formulários HTML</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Exercícios de Formulários HTML</h1>
+
+        <!-- Exercício 1 -->
+
+        <section>
+
+            <h2>1. Formulário de Cadastro</h2>
+
+            <form>
+
+                <label>Nome</label>
+                <input type="text" placeholder="Digite seu nome">
+
+                <label>E-mail</label>
+                <input type="email" placeholder="Digite seu e-mail">
+
+                <label>Senha</label>
+                <input type="password" placeholder="Digite sua senha">
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Exercício 2 -->
+
+        <section>
+
+            <h2>2. Validação HTML5</h2>
+
+            <form>
+
+                <label>E-mail</label>
+
+                <input
+                    type="email"
+                    placeholder="Digite seu e-mail"
+                    required>
+
+                <label>Senha</label>
+
+                <input
+                    type="password"
+                    placeholder="Mínimo de 8 caracteres"
+                    required
+                    pattern=".{8,}">
+
+                <button type="submit">
+                    Enviar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Exercício 3 -->
+
+        <section>
+
+            <h2>3. Login Responsivo</h2>
+
+            <form class="login">
+
+                <input
+                    type="email"
+                    placeholder="E-mail">
+
+                <input
+                    type="password"
+                    placeholder="Senha">
+
+                <button type="submit">
+                    Entrar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Exercício 4 -->
+
+        <section>
+
+            <h2>4. Informações Pessoais e Endereço</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Informações Pessoais</legend>
+
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite seu nome">
+
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(00) 00000-0000">
+
+                    <label>E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail">
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Endereço</legend>
+
+                    <label>Rua</label>
+                    <input type="text" placeholder="Digite a rua">
+
+                    <label>Bairro</label>
+                    <input type="text" placeholder="Digite o bairro">
+
+                    <label>Cidade</label>
+                    <input type="text" placeholder="Digite a cidade">
+
+                    <label>CEP</label>
+                    <input type="text" placeholder="00000-000">
+
+                </fieldset>
+
+                <button type="submit">
+                    Salvar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Exercício 5 -->
+
+        <section>
+
+            <h2>5. Formulário de Pesquisa</h2>
+
+            <form class="pesquisa">
+
+                <input
+                    type="search"
+                    placeholder="Digite sua pesquisa">
+
+                <button type="submit">
+                    Pesquisar
+                </button>
+
+            </form>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
