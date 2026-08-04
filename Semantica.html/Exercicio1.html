@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atividade HTML Semântico</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topo">
+
+    <h1>Atividade de HTML Semântico</h1>
+
+    <p>Exercícios de Desenvolvimento Web</p>
+
+</header>
+
+<nav class="menu">
+
+    <ul>
+
+        <li><a href="#ex1">Exercício 1</a></li>
+
+        <li><a href="#ex2">Exercício 2</a></li>
+
+        <li><a href="#ex3">Exercício 3</a></li>
+
+        <li><a href="#ex4">Exercício 4</a></li>
+
+        <li><a href="#ex5">Exercício 5</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+<section id="ex1" class="card">
+
+<h2>Exercício 1</h2>
+
+<header class="cabecalho">
+
+<h3>Meu Site</h3>
+
+</header>
+
+<nav class="menu-interno">
+
+<ul>
+
+<li><a href="#">Início</a></li>
+
+<li><a href="#">Sobre</a></li>
+
+<li><a href="#">Contato</a></li>
+
+</ul>
+
+</nav>
+
+<article>
+
+<h3>Sobre o site</h3>
+
+<p>
+
+Este exemplo utiliza os elementos semânticos do HTML5, como
+header, nav, main, section, article, aside e footer.
+
+</p>
+
+</article>
+
+<aside>
+
+<h3>Informação Extra</h3>
+
+<p>
+
+Este espaço representa um conteúdo complementar.
+
+</p>
+
+</aside>
+
+<footer class="rodape-card">
+
+Página criada para a atividade.
+
+</footer>
+
+</section>
+<section id="ex2" class="card">
+
+    <h2>Exercício 2</h2>
+
+    <h3>Layout utilizando apenas &lt;div&gt;</h3>
+
+<pre>
+&lt;div class="cabecalho"&gt;Cabeçalho&lt;/div&gt;
+&lt;div class="menu"&gt;Menu&lt;/div&gt;
+&lt;div class="conteudo"&gt;Conteúdo&lt;/div&gt;
+&lt;div class="rodape"&gt;Rodapé&lt;/div&gt;
+</pre>
+
+    <h3>Mesmo layout utilizando HTML Semântico</h3>
+
+<pre>
+&lt;header&gt;Cabeçalho&lt;/header&gt;
+&lt;nav&gt;Menu&lt;/nav&gt;
+&lt;main&gt;Conteúdo&lt;/main&gt;
+&lt;footer&gt;Rodapé&lt;/footer&gt;
+</pre>
+
+    <p>
+        Os elementos semânticos deixam o código mais organizado,
+        facilitam a leitura e melhoram a acessibilidade.
+    </p>
+
+</section>
+
+
+
+<section id="ex3" class="card">
+
+    <h2>Exercício 3</h2>
+
+    <figure>
+
+        <img src="./paisagem-natural-og.webp"
+             alt="Paisagem de exemplo">
+
+        <figcaption>
+            Figura de exemplo utilizando as tags
+            &lt;figure&gt; e &lt;figcaption&gt;.
+        </figcaption>
+
+    </figure>
+
+</section>
+<section id="ex4" class="card">
+
+    <h2>Exercício 4</h2>
+
+    <article>
+
+        <h3>Como aprender HTML</h3>
+
+        <section>
+
+            <h4>Introdução</h4>
+
+            <p>
+                HTML é a linguagem responsável pela estrutura das páginas da web.
+                Com ela é possível organizar textos, imagens, tabelas, links e outros elementos.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h4>Desenvolvimento</h4>
+
+            <p>
+                As tags semânticas tornam o código mais organizado e facilitam a
+                manutenção do projeto, além de melhorar a acessibilidade.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h4>Conclusão</h4>
+
+            <p>
+                Praticar exercícios é uma das melhores formas de aprender HTML e
+                desenvolver páginas mais bem estruturadas.
+            </p>
+
+        </section>
+
+    </article>
+
+</section>
+
+
+
+<section id="ex5" class="card">
+
+    <h2>Exercício 5</h2>
+
+    <p>
+        Exemplo de menu de navegação utilizando a tag
+        <strong>&lt;nav&gt;</strong> e uma lista não ordenada
+        <strong>&lt;ul&gt;</strong>.
+    </p>
+
+    <nav class="menu-exemplo">
+
+        <ul>
+
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+
+        </ul>
+
+    </nav>
+
+</section>
+
+</main>
+
+<footer class="rodape">
+
+    <p>
+        Atividade desenvolvida para a disciplina de Desenvolvimento Web.
+    </p>
+
+</footer>
+
+</body>
+</html>

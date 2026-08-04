@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(180deg,#fff7fb,#ffeef5);
+    color:#444;
+}
+
+/* ==========================
+   CABEÇALHO
+========================== */
+
+.topo{
+    background:linear-gradient(135deg,#ff8fbc,#ffc2dd);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    box-shadow:0 5px 20px rgba(255,105,180,.25);
+}
+
+.topo h1{
+    font-size:42px;
+    font-weight:700;
+}
+
+.topo p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* ==========================
+   MENU
+========================== */
+
+.menu{
+    background:#ff8fbc;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.menu ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+.menu ul li a{
+    display:block;
+    padding:18px 25px;
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.menu ul li a:hover{
+    background:#ff6fa9;
+}
+
+/* ==========================
+   CONTEÚDO
+========================== */
+
+main{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+    background:white;
+    padding:35px;
+    margin-bottom:35px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(255,105,180,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(255,105,180,.25);
+}
+
+.card h2{
+    color:#e75480;
+    margin-bottom:20px;
+    border-bottom:3px solid #ffb6cf;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.card h3{
+    margin-top:20px;
+    color:#d63384;
+}
+
+.card h4{
+    margin-top:15px;
+    color:#c2185b;
+}
+
+.card p{
+    margin-top:10px;
+    line-height:1.8;
+}
+
+/* ==========================
+   EXERCÍCIO 1
+========================== */
+
+.cabecalho{
+    background:#ff9ecb;
+    color:white;
+    text-align:center;
+    padding:18px;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+.menu-interno{
+    background:#f48fb1;
+    border-radius:10px;
+}
+
+.menu-interno ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+.menu-interno ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:14px 20px;
+    transition:.3s;
+}
+
+.menu-interno ul li a:hover{
+    background:#ec6fa7;
+}
+
+aside{
+    background:#fff0f6;
+    margin-top:20px;
+    padding:20px;
+    border-left:6px solid #ff6fa9;
+    border-radius:10px;
+}
+
+.rodape-card{
+    background:#ff9ecb;
+    color:white;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+/* ==========================
+   EXERCÍCIO 2
+========================== */
+
+pre{
+    background:#ffe4ef;
+    color:#8a2957;
+    padding:20px;
+    border-radius:12px;
+    overflow:auto;
+    margin:20px 0;
+    font-size:15px;
+}
+
+/* ==========================
+   EXERCÍCIO 3
+========================== */
+
+figure{
+    text-align:center;
+}
+
+figure img{
+    width:100%;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+figcaption{
+    margin-top:15px;
+    color:#b03060;
+    font-style:italic;
+}
+
+/* ==========================
+   EXERCÍCIO 5
+========================== */
+
+.menu-exemplo{
+    background:#ff8fbc;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.menu-exemplo ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+.menu-exemplo ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:15px 22px;
+    transition:.3s;
+}
+
+.menu-exemplo ul li a:hover{
+    background:#ff6fa9;
+}
+
+/* ==========================
+   RODAPÉ
+========================== */
+
+.rodape{
+    background:#ff8fbc;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+    font-weight:500;
+}
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+.menu ul,
+.menu-interno ul,
+.menu-exemplo ul{
+    flex-direction:column;
+}
+
+.topo h1{
+    font-size:30px;
+}
+
+.card{
+    padding:20px;
+}
+
+}
