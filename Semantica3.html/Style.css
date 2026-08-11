@@ -1,0 +1,522 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #fff5f9;
+
+    color: #4a2635;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+
+    width: 100%;
+
+    padding: 1.2rem 8%;
+
+    background-color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow: 0 0.2rem 1rem rgba(180, 60, 110, 0.12);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+
+    font-size: 1.6rem;
+
+    font-weight: bold;
+
+    color: #d63384;
+}
+
+.logo span {
+    color: #ff80ab;
+}
+
+
+/* MENU */
+
+.menu {
+
+    display: flex;
+
+    gap: 2rem;
+}
+
+.menu a {
+
+    text-decoration: none;
+
+    color: #6b3a4c;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+
+    color: #d63384;
+}
+
+
+/* CHECKBOX DO MENU */
+
+#menu {
+    display: none;
+}
+
+
+/* ÍCONE HAMBÚRGUER */
+
+.menu-icon {
+
+    display: none;
+
+    font-size: 2rem;
+
+    color: #d63384;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   INÍCIO
+========================= */
+
+.inicio {
+
+    min-height: 80vh;
+
+    padding: 5rem 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #fff0f6,
+        #ffd6e7
+    );
+}
+
+.conteudo {
+
+    max-width: 50rem;
+}
+
+.pequeno-titulo {
+
+    color: #d63384;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.2rem;
+
+    margin-bottom: 1rem;
+}
+
+.conteudo h1 {
+
+    font-size: 3.5rem;
+
+    line-height: 1.1;
+
+    color: #7a2849;
+
+    margin-bottom: 1.5rem;
+}
+
+.conteudo > p:not(.pequeno-titulo) {
+
+    color: #704455;
+
+    font-size: 1.1rem;
+
+    max-width: 40rem;
+
+    margin: auto;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+
+    padding: 5rem 8%;
+}
+
+.titulo {
+
+    text-align: center;
+
+    margin-bottom: 3rem;
+}
+
+.titulo p {
+
+    color: #d63384;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.15rem;
+}
+
+.titulo h2 {
+
+    color: #7a2849;
+
+    font-size: 2.2rem;
+
+    margin-top: 0.5rem;
+}
+
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre {
+
+    background-color: #ffffff;
+}
+
+.conteudo-sobre {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+.caixa {
+
+    width: 30%;
+
+    padding: 2rem;
+
+    background-color: #fff5f9;
+
+    border: 0.1rem solid #ffd1e1;
+
+    border-radius: 1rem;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.caixa:hover {
+
+    transform: translateY(-0.4rem);
+
+    box-shadow: 0 0.7rem 1.5rem rgba(214, 51, 132, 0.12);
+}
+
+.caixa h3 {
+
+    color: #d63384;
+
+    font-size: 1.3rem;
+
+    margin-bottom: 1rem;
+}
+
+.caixa p {
+
+    color: #704455;
+
+    font-size: 1rem;
+}
+
+
+/* =========================
+   CARROSSEL
+========================= */
+
+.galeria {
+
+    background-color: #fff5f9;
+
+    text-align: center;
+}
+
+.carrossel {
+
+    width: 100%;
+
+    max-width: 55rem;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 1rem;
+
+    box-shadow: 0 0.7rem 2rem rgba(180, 60, 110, 0.15);
+}
+
+.slides {
+
+    width: 300%;
+
+    display: flex;
+
+    animation: passar 9s infinite;
+}
+
+.slides img {
+
+    width: 33.333%;
+
+    height: 25rem;
+
+    object-fit: cover;
+}
+
+
+/* ANIMAÇÃO DO CARROSSEL */
+
+@keyframes passar {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(0);
+    }
+
+    35% {
+        transform: translateX(-33.333%);
+    }
+
+    65% {
+        transform: translateX(-33.333%);
+    }
+
+    70% {
+        transform: translateX(-66.666%);
+    }
+
+    95% {
+        transform: translateX(-66.666%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+
+    padding: 2rem;
+
+    background-color: #7a2849;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+
+        padding: 1rem 5%;
+    }
+
+
+    /* Mostra o hambúrguer */
+
+    .menu-icon {
+
+        display: block;
+    }
+
+
+    /* Esconde o menu */
+
+    .menu {
+
+        display: none;
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        width: 100%;
+
+        background-color: #ffffff;
+
+        padding: 1.5rem;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 1rem;
+
+        box-shadow: 0 0.5rem 1rem rgba(180, 60, 110, 0.1);
+    }
+
+
+    /* Quando clicar no hambúrguer */
+
+    #menu:checked ~ .menu {
+
+        display: flex;
+    }
+
+
+    .conteudo h1 {
+
+        font-size: 2.8rem;
+    }
+
+
+    .conteudo-sobre {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .caixa {
+
+        width: 100%;
+
+        max-width: 35rem;
+    }
+
+
+    section {
+
+        padding: 4rem 5%;
+    }
+
+
+    .slides img {
+
+        height: 20rem;
+    }
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 480px) {
+
+    html {
+
+        font-size: 14px;
+    }
+
+
+    .logo {
+
+        font-size: 1.4rem;
+    }
+
+
+    .conteudo h1 {
+
+        font-size: 2.2rem;
+    }
+
+
+    .conteudo > p:not(.pequeno-titulo) {
+
+        font-size: 1rem;
+    }
+
+
+    .titulo h2 {
+
+        font-size: 1.8rem;
+    }
+
+
+    section {
+
+        padding: 3rem 5%;
+    }
+
+
+    .caixa {
+
+        padding: 1.5rem;
+    }
+
+
+    .slides img {
+
+        height: 15rem;
+    }
+}
