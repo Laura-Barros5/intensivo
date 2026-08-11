@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfólio Interativo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span>&lt;/&gt;</span> Meu Portfólio
+            </div>
+
+            <a href="#projetos">Projetos</a>
+        </nav>
+    </header>
+
+
+    <section class="inicio">
+
+        <div class="inicio-texto">
+
+            <span class="etiqueta">
+                DESENVOLVIMENTO WEB
+            </span>
+
+            <h1>
+                Meu portfólio
+                <span>interativo.</span>
+            </h1>
+
+            <p>
+                Projeto desenvolvido com HTML, CSS e JavaScript
+                para demonstrar diferentes funcionalidades
+                interativas em uma página web.
+            </p>
+
+            <a href="#projetos" class="botao-inicio">
+                Conhecer projeto
+            </a>
+
+        </div>
+
+
+        <div class="codigo">
+
+            <div class="barra-codigo">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="codigo-texto">
+                <p><span>const</span> projeto = {</p>
+                <p>&nbsp;&nbsp;HTML,</p>
+                <p>&nbsp;&nbsp;CSS,</p>
+                <p>&nbsp;&nbsp;JavaScript</p>
+                <p>};</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <main id="projetos">
+
+        <div class="titulo">
+
+            <span class="etiqueta">
+                JAVASCRIPT
+            </span>
+
+            <h2>Funcionalidades interativas</h2>
+
+            <p>
+                Experimente as funcionalidades desenvolvidas
+                neste projeto.
+            </p>
+
+        </div>
+
+
+        <!-- BOTÃO -->
+
+        <section class="card">
+
+            <div class="icone">🎨</div>
+
+            <div class="conteudo">
+
+                <h3>Botão interativo</h3>
+
+                <p>
+                    Passe o mouse sobre o botão para alterar
+                    sua cor utilizando JavaScript.
+                </p>
+
+                <button id="botaoCor">
+                    Passe o mouse aqui
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTADOR -->
+
+        <section class="card">
+
+            <div class="icone">🖱️</div>
+
+            <div class="conteudo">
+
+                <h3>Contador de cliques</h3>
+
+                <p>
+                    Clique no botão e veja a contagem
+                    aumentar em tempo real.
+                </p>
+
+                <div class="contador">
+
+                    <div id="numero">0</div>
+
+                    <button id="botaoContar">
+                        Clique aqui
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MODAL -->
+
+        <section class="card">
+
+            <div class="icone">⚠️</div>
+
+            <div class="conteudo">
+
+                <h3>Modal de aviso</h3>
+
+                <p>
+                    Clique no botão para abrir uma mensagem
+                    de aviso.
+                </p>
+
+                <button id="botaoModal" class="botao-principal">
+                    Abrir aviso
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA -->
+
+        <section class="card">
+
+            <div class="icone">🖼️</div>
+
+            <div class="conteudo">
+
+                <h3>Galeria de imagens</h3>
+
+                <p>
+                    Clique em uma imagem para ampliá-la.
+                </p>
+
+                <div class="galeria">
+
+                    <img
+                        class="imagem"
+                        src="./imagem1.4.jpg"
+                        alt="Computador">
+
+                    <img
+                        class="imagem"
+                        src="./imagem2.4.jpg"
+                        alt="Código">
+
+                    <img
+                        class="imagem"
+                        src="./imagem3.4.avif"
+                        alt="Programação">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABAS -->
+
+        <section class="card">
+
+            <div class="icone">📑</div>
+
+            <div class="conteudo">
+
+                <h3>Abas de conteúdo</h3>
+
+                <p>
+                    Clique nas abas para visualizar
+                    diferentes conteúdos.
+                </p>
+
+                <div class="abas">
+
+                    <button class="aba ativa" data-aba="sobre">
+                        Sobre
+                    </button>
+
+                    <button class="aba" data-aba="tecnologias">
+                        Tecnologias
+                    </button>
+
+                    <button class="aba" data-aba="objetivo">
+                        Objetivo
+                    </button>
+
+                </div>
+
+
+                <div id="sobre" class="conteudo-aba ativo">
+
+                    <h4>Sobre o projeto</h4>
+
+                    <p>
+                        Este projeto reúne diferentes
+                        funcionalidades interativas desenvolvidas
+                        com JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div id="tecnologias" class="conteudo-aba">
+
+                    <h4>Tecnologias</h4>
+
+                    <p>
+                        Foram utilizados HTML, CSS e JavaScript
+                        no desenvolvimento desta página.
+                    </p>
+
+                </div>
+
+
+                <div id="objetivo" class="conteudo-aba">
+
+                    <h4>Objetivo</h4>
+
+                    <p>
+                        Demonstrar conhecimentos de desenvolvimento
+                        web e programação.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Desenvolvido com 💗 usando HTML, CSS e JavaScript.
+        </p>
+
+        <p>© 2026 - Meu Portfólio</p>
+
+    </footer>
+
+
+    <!-- MODAL -->
+
+    <div id="modal">
+
+        <div class="janela-modal">
+
+            <button id="fecharModal" class="fechar">
+                ×
+            </button>
+
+            <div class="icone-modal">
+                ⚠️
+            </div>
+
+            <h2>Aviso!</h2>
+
+            <p>
+                Esta é uma janela modal criada
+                utilizando JavaScript.
+            </p>
+
+            <button id="entendi" class="botao-principal">
+                Entendi
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- IMAGEM AMPLIADA -->
+
+    <div id="imagemGrande">
+
+        <button id="fecharImagem">
+            ×
+        </button>
+
+        <img id="imagemAmpliada" src="" alt="Imagem ampliada">
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // BOTÃO QUE MUDA DE COR
+
+        const botaoCor = document.getElementById("botaoCor");
+
+        botaoCor.addEventListener("mouseenter", function () {
+            botaoCor.style.backgroundColor = "#8e44ad";
+        });
+
+        botaoCor.addEventListener("mouseleave", function () {
+            botaoCor.style.backgroundColor = "#e83e8c";
+        });
+
+
+        // CONTADOR
+
+        let contador = 0;
+
+        const botaoContar = document.getElementById("botaoContar");
+
+        const numero = document.getElementById("numero");
+
+        botaoContar.addEventListener("click", function () {
+
+            contador++;
+
+            numero.textContent = contador;
+
+        });
+
+
+        // MODAL
+
+        const botaoModal = document.getElementById("botaoModal");
+
+        const modal = document.getElementById("modal");
+
+        const fecharModal = document.getElementById("fecharModal");
+
+        const entendi = document.getElementById("entendi");
+
+
+        botaoModal.addEventListener("click", function () {
+            modal.style.display = "flex";
+        });
+
+
+        fecharModal.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+
+        entendi.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+
+        // FECHAR MODAL CLICANDO FORA
+
+        modal.addEventListener("click", function (evento) {
+
+            if (evento.target === modal) {
+                modal.style.display = "none";
+            }
+
+        });
+
+
+        // GALERIA
+
+        const imagens = document.querySelectorAll(".imagem");
+
+        const imagemGrande = document.getElementById("imagemGrande");
+
+        const imagemAmpliada = document.getElementById("imagemAmpliada");
+
+        const fecharImagem = document.getElementById("fecharImagem");
+
+
+        imagens.forEach(function (imagem) {
+
+            imagem.addEventListener("click", function () {
+
+                imagemAmpliada.src = imagem.src;
+
+                imagemAmpliada.alt = imagem.alt;
+
+                imagemGrande.style.display = "flex";
+
+            });
+
+        });
+
+
+        fecharImagem.addEventListener("click", function () {
+            imagemGrande.style.display = "none";
+        });
+
+
+        imagemGrande.addEventListener("click", function (evento) {
+
+            if (evento.target === imagemGrande) {
+                imagemGrande.style.display = "none";
+            }
+
+        });
+
+
+        // ABAS
+
+        const abas = document.querySelectorAll(".aba");
+
+        const conteudos = document.querySelectorAll(".conteudo-aba");
+
+
+        abas.forEach(function (aba) {
+
+            aba.addEventListener("click", function () {
+
+                abas.forEach(function (outraAba) {
+                    outraAba.classList.remove("ativa");
+                });
+
+                conteudos.forEach(function (conteudo) {
+                    conteudo.classList.remove("ativo");
+                });
+
+                aba.classList.add("ativa");
+
+                const nomeAba = aba.getAttribute("data-aba");
+
+                document
+                    .getElementById(nomeAba)
+                    .classList.add("ativo");
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>
